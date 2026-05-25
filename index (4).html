@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Планета Земля</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    body.dark {
+      background: #222;
+      color: #f9f9f9;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      background: inherit;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .infobox {
+      background: #eef;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    body.dark .infobox {
+      background: #333;
+      color: #ddd;
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      flex: 2;
+      padding-right: 20px;
+    }
+
+    .image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    iframe {
+      display: block;
+      margin: 30px auto;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .myButton {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .myButton:hover {
+      background: #45a049;
+    }
+
+    .theme-toggle {
+      display: inline-block;
+      margin: 10px;
+      padding: 8px 16px;
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="light">
+  <div class="content">
+    <button class="theme-toggle" onclick="toggleTheme()">Змінити тему</button>
+    <h1>Земля</h1>
+
+    <div class="infobox">
+      <h2>Основні дані</h2>
+      <p><strong>Радіус:</strong> ~6371 км</p>
+      <p><strong>Площа поверхні:</strong> ~510 млн км²</p>
+      <p><strong>Вода:</strong> ~71%</p>
+      <p><strong>Супутник:</strong> Місяць</p>
+    </div>
+
+    <div class="section">
+      <div class="text" id="text">
+        <p><a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BC%D0%BB%D1%8F" target="_blank">Земля</a> — третя планета від Сонця та єдина відома на сьогодні небесна сфера, де існує життя. Вона належить до планет земної групи й має тверду поверхню, океани та атмосферу, що створюють унікальні умови для розвитку біосфери. Форма Землі близька до кулі, але через обертання навколо своєї осі вона дещо сплюснута біля полюсів. Радіус планети становить приблизно 6371 км, а площа поверхні — понад 510 мільйонів квадратних кілометрів, з яких близько 71% займає вода.</p>
+
+        <p>Земля складається з кількох оболонок: літосфери, гідросфери, атмосфери та біосфери. Взаємодія цих оболонок забезпечує існування різноманітних екосистем. Атмосфера складається переважно з азоту та кисню, а також містить вуглекислий газ, водяну пару й інші гази, що впливають на кліматичні процеси.</p>
+
+        <p>Земля здійснює два основні рухи: обертання навколо своєї осі, що зумовлює зміну дня і ночі, та обертання навколо Сонця, яке визначає пори року. Середня відстань від Сонця становить близько 150 мільйонів кілометрів, що забезпечує оптимальний температурний режим для існування води в рідкому стані. Магнітне поле Землі захищає її від сонячного вітру та космічної радіації.</p>
+
+        <p>На планеті існує величезне різноманіття форм життя — від найпростіших мікроорганізмів до складних багатоклітинних організмів, включно з людиною. Людство стало головною силою, що змінює вигляд планети: розвиває міста, промисловість, сільське господарство, але водночас створює екологічні проблеми — забруднення, вирубку лісів, зміну клімату. Природні ресурси Землі — ґрунти, вода, корисні копалини — є основою існування цивілізації, проте їхнє надмірне використання може призвести до глобальних криз.</p>
+
+        <p>Земля має один природний супутник — <a href="https://uk.wikipedia.org/wiki/%D0%9C%D1%96%D1%81%D1%8F%D1%86%D1%8C_(%D1%81%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA)" target="_blank">Місяць</a>, який впливає на припливи й відпливи океанів, стабілізує нахил осі планети та відіграє важливу роль у розвитку життя. Дослідження Землі здійснюються різними науками: геологією, географією, біологією, екологією, а також космічними технологіями, що дозволяють спостерігати планету з орбіти.</p>
+
+        <p>Таким чином, Земля — це не лише небесне тіло, а й складна жива система, де взаємодіють природні процеси й діяльність людини. Вона є унікальним середовищем, яке потребує дбайливого ставлення та охорони, адже від цього залежить майбутнє всього живого.</p>
+      </div>
+
+      <a href="https://www.google.com/maps" target="_blank" class="myButton">Гугл мапа</a>
+
+      <div class="image">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.HjSnmxQDQ7JSacfHGpkF7wHaEK?w=318&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="old map">
+        </figure>
+      </div>
+    </div>
+
+    <iframe width="951" height="535" src="https://www.youtube.com/embed/D7Xs7bnGllM" title="Документальний фільм HD Земля створити планету National Geographic Channel" allowfullscreen></iframe>
+
+    <a href="#text" class="myButton">Вгору</a>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('light');
+      if (document.body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    window.onload = function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.body.className = savedTheme;
+      }
+    }
+  </script>
+  <div class="share-buttons">
+  <h3>Поділитися сторінкою:</h3>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" 
+     target="_blank" class="myButton">Facebook</a>
+
+  <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Цікава%20сторінка%20про%20Землю!" 
+     target="_blank" class="myButton">Twitter</a>
+
+  <a href="https://t.me/share/url?url=https://example.com&text=Цікава%20сторінка%20про%20Землю!" 
+     target="_blank" class="myButton">Telegram</a>
+</div>
+
+<style>
+  .share-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .share-buttons .myButton {
+    margin: 5px;
+  }
+</style>
+</body>
+</html>
